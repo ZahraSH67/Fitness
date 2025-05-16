@@ -1,6 +1,6 @@
 import { serverFetch } from "@/lib/server-fetch";
 import ClassesDisplay from "./classesDisplay";
-import Swiper from "./Swiper";
+import CustomSwiper from "./CustomSwiper";    // Your custom component
 import Navigation from "@/components/navigation/Navigation";
 
 
@@ -58,7 +58,7 @@ export default async function Classes() {
       )}
       <h2 className="text-4xl  mt-6 sm:mt-4 md:mt-6 text-left">Classes for you</h2>
         {classesWithRatings.length > 0 ? (
-                  <Swiper>
+                  <CustomSwiper>
                     {classesWithRatings.map((classData) => (
                       <ClassesDisplay
                         key={classData.id}
@@ -66,7 +66,7 @@ export default async function Classes() {
                         rating={classData.rating} 
                       />
                     ))}
-                  </Swiper>
+                  </CustomSwiper>
                 ) : (
                   <p className="text-gray-500 text-center">No other classes available</p>
                 )} 
