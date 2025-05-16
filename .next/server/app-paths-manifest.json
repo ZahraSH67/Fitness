@@ -1,0 +1,8 @@
+{
+  "/(main)/classes/page": "app/(main)/classes/page.js",
+  "/(main)/classes/[id]/page": "app/(main)/classes/[id]/page.js",
+  "/(main)/search/page": "app/(main)/search/page.js",
+  "/(main)/login/page": "app/(main)/login/page.js",
+  "/(main)/registration/page": "app/(main)/registration/page.js",
+  "/(main)/schedule/page": "app/(main)/schedule/page.js"
+}
